@@ -1,13 +1,15 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { BasicsComponent } from './basics/basics.component';
-import { RxjsRoutingRoutes } from './rxjs-routing';
+import { RxjsRoutingModule } from './rxjs-routing';
+import { RxjsComponent } from './rxjs/rxjs.component';
+import { OperatorsComponent } from './operators/operators.component';
 
 @NgModule({
   imports: [
     CommonModule,
-    RxjsRoutingRoutes
+    RxjsRoutingModule
   ],
-  declarations: [BasicsComponent]
+  declarations: [BasicsComponent, RxjsComponent, OperatorsComponent]
 })
 export class RxjsModule { }

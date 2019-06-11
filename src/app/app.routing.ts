@@ -1,10 +1,11 @@
-import { BasicsComponent } from './rxjs/basics/basics.component';
 import { Routes, RouterModule } from '@angular/router';
 import { NgModule } from '@angular/core';
+import { BasicsComponent } from './rxjs/basics/basics.component';
+import { AppComponent } from './app.component';
 
 const routes: Routes = [
-  { path: '',   redirectTo: '/app-basics', pathMatch: 'full' },
-  { path: '**', component: BasicsComponent }
+  { path: '',   redirectTo: '/rxjs', pathMatch: 'full' },
+  { path: '**', component: AppComponent }
 ];
 
 @NgModule({
