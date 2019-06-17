@@ -1,4 +1,4 @@
 export interface BooksIds {
-  code: string;
+  code?: string;
 }
 
