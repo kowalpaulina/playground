@@ -1,0 +1,7 @@
+<form novalidate [formGroup]="formGroup">
+<input formControlName="name">
+</form>
+
+<p *ngIf="formGroup.get('name').hasError('name')">Wrong name</p>
+<button (click)="toggleState()">{{formGroup.get('name').disabled ? 'enable' : 'disable'}}</button>
+<button (click)="submit()">submit</button>

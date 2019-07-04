@@ -7,12 +7,15 @@ import { AppRoutingModule } from './app.routing';
 import { NavComponent } from './nav/nav.component';
 import { MatMenuModule } from '@angular/material';
 import { RxjsRoutingModule } from './rxjs/rxjs-routing';
+import { FormsComponent } from './forms/forms.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 
 @NgModule({
    declarations: [
       AppComponent,
-      NavComponent
+      NavComponent,
+      FormsComponent
    ],
    imports: [
       BrowserModule,
@@ -20,7 +23,8 @@ import { RxjsRoutingModule } from './rxjs/rxjs-routing';
       AppRoutingModule,
       BrowserAnimationsModule,
       MatMenuModule,
-      RxjsRoutingModule
+      RxjsRoutingModule,
+      ReactiveFormsModule
    ],
    providers: [],
    bootstrap: [

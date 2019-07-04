@@ -4,7 +4,7 @@ import { BasicsComponent } from './rxjs/basics/basics.component';
 import { AppComponent } from './app.component';
 
 const routes: Routes = [
-  { path: '',   redirectTo: '/rxjs', pathMatch: 'full' },
+  // { path: '',   redirectTo: '/rxjs', pathMatch: 'full' },
   { path: '**', component: AppComponent }
 ];
 
