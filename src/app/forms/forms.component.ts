@@ -33,13 +33,15 @@ export class FormsComponent implements OnInit {
           emitEvent: false
         });
       }
-      console.log(value)
+      console.log(value);
+      console.log(this.formGroup.value);
       nameControl.setValidators(nameValidator)
     })
   }
 
   toggleState() {
-    this.formGroup.disabled ? this.formGroup.get('name').enable({emitEvent: false}) : this.formGroup.get('name').disable()
+    this.formGroup.disabled ?
+      this.formGroup.get('name').enable({emitEvent: false}) : this.formGroup.get('name').disable()
   }
 
   submit() {

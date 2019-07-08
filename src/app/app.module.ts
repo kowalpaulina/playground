@@ -5,7 +5,7 @@ import { AppComponent } from './app.component';
 import { RxjsModule } from './rxjs/rxjs.module';
 import { AppRoutingModule } from './app.routing';
 import { NavComponent } from './nav/nav.component';
-import { MatMenuModule } from '@angular/material';
+import { MatMenuModule, MatButtonModule, MatFormFieldModule, MatInputModule } from '@angular/material';
 import { RxjsRoutingModule } from './rxjs/rxjs-routing';
 import { FormsComponent } from './forms/forms.component';
 import { ReactiveFormsModule } from '@angular/forms';
@@ -23,6 +23,9 @@ import { ReactiveFormsModule } from '@angular/forms';
       AppRoutingModule,
       BrowserAnimationsModule,
       MatMenuModule,
+      MatButtonModule,
+      MatFormFieldModule,
+      MatInputModule,
       RxjsRoutingModule,
       ReactiveFormsModule
    ],

@@ -18,6 +18,10 @@ export class NavComponent implements OnInit {
     {
       name: 'books',
       link: 'rxjs/books'
+    },
+    {
+      name: 'forms',
+      link: 'forms'
     }
   ];
 

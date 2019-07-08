@@ -2,9 +2,12 @@ import { Routes, RouterModule } from '@angular/router';
 import { NgModule } from '@angular/core';
 import { BasicsComponent } from './rxjs/basics/basics.component';
 import { AppComponent } from './app.component';
+import { FormsComponent } from './forms/forms.component';
 
 const routes: Routes = [
-  // { path: '',   redirectTo: '/rxjs', pathMatch: 'full' },
+  //{ path: '', redirectTo: '/rxjs', pathMatch: 'full' },
+  { path: '', component: AppComponent },
+  { path: 'forms', component: FormsComponent },
   { path: '**', component: AppComponent }
 ];
 
