@@ -8,15 +8,15 @@ import { Component, OnInit } from '@angular/core';
 export class NavComponent implements OnInit {
   items = [
     {
-      name: 'basics',
+      name: 'rxjs basics',
       link: 'rxjs/basics'
     },
     {
-      name: 'operators',
+      name: 'rxjs operators',
       link: 'rxjs/operators'
     },
     {
-      name: 'books',
+      name: 'rxjs books',
       link: 'rxjs/books'
     },
     {

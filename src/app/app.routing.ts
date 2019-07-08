@@ -1,14 +1,17 @@
-import { Routes, RouterModule } from '@angular/router';
-import { NgModule } from '@angular/core';
-import { BasicsComponent } from './rxjs/basics/basics.component';
-import { AppComponent } from './app.component';
-import { FormsComponent } from './forms/forms.component';
+import { NavComponent } from "./nav/nav.component";
+import { Routes, RouterModule } from "@angular/router";
+import { NgModule } from "@angular/core";
+import { AppComponent } from "./app.component";
+import { FormsComponent } from "./forms/forms.component";
+import { RxjsComponent } from "./rxjs/rxjs/rxjs.component";
 
 const routes: Routes = [
-  //{ path: '', redirectTo: '/rxjs', pathMatch: 'full' },
-  { path: '', component: AppComponent },
-  { path: 'forms', component: FormsComponent },
-  { path: '**', component: AppComponent }
+  //
+  // { path: "", component: NavComponent },
+  // { path: 'rxjs', redirectTo: '/rxjs', pathMatch: 'full' },
+  { path: "rxjs", component: RxjsComponent },
+  { path: "forms", component: FormsComponent },
+  { path: "**", redirectTo: "/rxjs" }
 ];
 
 @NgModule({
@@ -18,8 +21,6 @@ const routes: Routes = [
       { enableTracing: true } // <-- debugging purposes only
     )
   ],
-  exports: [
-    RouterModule
-  ]
+  exports: [RouterModule]
 })
 export class AppRoutingModule {}
